@@ -1,0 +1,77 @@
+.tovar_name_line {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.tovar_name_line > h2 {
+    width: 260px;
+    text-align: center;
+    color: #f2b33a;
+    font-size: 28px;
+    border-bottom: 2px solid #f2b33a;
+    padding-bottom: 10px;
+}
+
+/* Закомментированный код ниже использовался раннее для таблиц на стрицах товаров */
+/* table {
+    border-collapse: separate;
+    border-spacing: 0 32px;
+    font-size: 24px;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+.tovar_tb {
+    border-bottom: 1px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 15px 100px;
+    margin: 0 0px;
+}
+
+.tb_right_botder {
+    border-right: 1px solid #bbbbbb;
+} */
+
+table {
+    display: inline-block;
+    border-collapse: separate;
+    font-size: 24px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 12px solid #f0f0f0;
+    border-radius: 10px;
+    margin: 25px 100px;
+}
+
+.tableH3 {
+    background-color: #f2b33a;
+    border-radius: 10px;
+}
+
+table > h3,
+th {
+    color: #202020;
+}
+
+td:first-child {
+    color: #f2b33a;
+}
+
+th {
+    padding: 15px 10px;
+    width: 350px;
+}
+
+td {
+    background-color: rgb(73, 73, 73);
+    padding: 15px 10px;
+    width: 350px;
+}
+
+td {
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: #000000;
+    border-radius: 3px;
+}
