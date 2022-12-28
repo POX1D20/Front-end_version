@@ -35,7 +35,11 @@ const Zayavka = () => {
                     Оставьте заявку, и мы перезвоним Вам что бы ответить на все
                     Ваши вопросы.
                 </p>
-                <img className="arrow_zayavka" src="images/arrow.jpg"></img>
+                <img
+                    className="arrow_zayavka"
+                    src="images/arrow.jpg"
+                    alt=""
+                ></img>
             </div>
 
             <div className="zayavka_fone">

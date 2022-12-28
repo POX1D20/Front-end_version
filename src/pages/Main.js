@@ -1,11 +1,11 @@
 import React from 'react';
 import Zayavka from '../components/zayavka/Zayavka';
 import { NavLink } from 'react-router-dom';
-import { DELIVERY_ROUTE } from '../utils/const';
+// import { DELIVERY_ROUTE } from '../utils/const';
 import { BETON_ROUTE } from '../utils/const';
 import { FBS_ROUTE } from '../utils/const';
 import { KERAMZITOBETON_ROUTE } from '../utils/const';
-import { AUTOBETONONASOS_ROUTE } from '../utils/const';
+// import { AUTOBETONONASOS_ROUTE } from '../utils/const';
 import { JBI_ROUTE } from '../utils/const';
 // import { createAppl } from "../http/DeviceApi";
 
@@ -53,10 +53,12 @@ const Main = () => {
 
                     <div className="btns">
                         <div className="btn_zakaz">
-                            <NavLink to={DELIVERY_ROUTE}>Заказать</NavLink>
+                            {/* <NavLink to={DELIVERY_ROUTE}>Заказать</NavLink> */}
+                            <a href="/delivery">Заказать</a>
                         </div>
                         <div className="btn_podrobno">
-                            <NavLink to={BETON_ROUTE}>Подробнее</NavLink>
+                            {/* <NavLink to={BETON_ROUTE}>Подробнее</NavLink> */}
+                            <a href="/beton">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -75,12 +77,10 @@ const Main = () => {
 
                     <div className="btns">
                         <div className="btn_zakaz">
-                            <NavLink to={DELIVERY_ROUTE}>Заказать</NavLink>
+                            <a href="/delivery">Заказать</a>
                         </div>
                         <div className="btn_podrobno">
-                            <NavLink to={KERAMZITOBETON_ROUTE}>
-                                Подробнее
-                            </NavLink>
+                            <a href="/keramzitobeton">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -104,12 +104,10 @@ const Main = () => {
 
                     <div className="btns">
                         <div className="btn_zakaz">
-                            <NavLink to={DELIVERY_ROUTE}>Заказать</NavLink>
+                            <a href="/delivery">Заказать</a>
                         </div>
                         <div className="btn_podrobno">
-                            <NavLink to={AUTOBETONONASOS_ROUTE}>
-                                Подробнее
-                            </NavLink>
+                            <a href="/autopump">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -131,10 +129,10 @@ const Main = () => {
 
                     <div className="btns">
                         <div className="btn_zakaz">
-                            <NavLink to={DELIVERY_ROUTE}>Заказать</NavLink>
+                            <a href="/delivery">Заказать</a>
                         </div>
                         <div className="btn_podrobno">
-                            <NavLink to={FBS_ROUTE}>Подробнее</NavLink>
+                            <a href="/fbs_blocks">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -155,10 +153,10 @@ const Main = () => {
 
                     <div className="btns_Nov">
                         <div className="btn_zakaz">
-                            <NavLink to={DELIVERY_ROUTE}>Заказать</NavLink>
+                            <a href="/delivery">Заказать</a>
                         </div>
                         <div className="btn_podrobno">
-                            <NavLink to={BETON_ROUTE}>Подробнее</NavLink>
+                            <a href="/beton">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -169,6 +167,9 @@ const Main = () => {
 
             <div className="container_main">
                 <div className="main_text">
+                    <h1>
+                        <b>Актуальные цены на продукцию ООО "КСМ-8"!</b>
+                    </h1>
                     <table id="table1">
                         <h3 className="tableH3">Товарный бетон</h3>
                         <tr>
@@ -333,7 +334,7 @@ const Main = () => {
                                 alt=""
                             ></img>
                             <p>
-                                Собственный автопарк автобетононасосов и
+                                Собственный автопарк бетононасосов и
                                 бетоносмесителей
                             </p>
                         </div>
@@ -451,6 +452,14 @@ const Main = () => {
                         <div className="Partners_lv2">
                             <a href="/">
                                 <img
+                                    src="images/partners/clean_city.png"
+                                    alt=""
+                                ></img>
+                            </a>
+                        </div>
+                        <div className="Partners_lv2">
+                            <a href="/">
+                                <img
                                     src="images/partners/eldako.png"
                                     alt=""
                                 ></img>
@@ -464,14 +473,7 @@ const Main = () => {
                                 ></img>
                             </a>
                         </div>
-                        <div className="Partners_lv2">
-                            <a href="/">
-                                <img
-                                    src="images/partners/clean_city.png"
-                                    alt=""
-                                ></img>
-                            </a>
-                        </div>
+
                         <div className="Partners_lv2">
                             <div className="Partners_lv3">
                                 <a href="/">

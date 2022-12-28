@@ -1,5 +1,5 @@
-import React from 'react'
-import Zayavka from '../components/zayavka/Zayavka'
+import React from 'react';
+import Zayavka from '../components/zayavka/Zayavka';
 
 const Delivery = () => {
     return (
@@ -18,7 +18,7 @@ const Delivery = () => {
                         Наша компания имеет свой собственный автопарк, в котором
                         есть миксеры, автобетоносмесители, с емкостью бочки от 5
                         М3 до 10 М3 (кубов), также у нас вы сможете взять в
-                        аренду <a href="#">автобетононасос</a> и другое
+                        аренду <a href="/">автобетононасос</a> и другое
                         дополнительное оборудование для спецтехники.
                     </li>
                     <li>
@@ -79,7 +79,7 @@ const Delivery = () => {
             </div>
             <Zayavka />
         </div>
-    )
-}
+    );
+};
 
-export default Delivery
+export default Delivery;
