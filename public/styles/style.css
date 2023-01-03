@@ -459,6 +459,22 @@ main {
     /* height: 100vh; */
 }
 
+/* Каталог товаров */
+
+.catalog_text {
+    color: #e7e7e7;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* .catalog_bg {
+    background-color: #e6e6e6;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px 100px;
+    padding-bottom: 50px;
+} */
+
 /* Отступы  для тела */
 
 .container_main {
@@ -580,19 +596,32 @@ main {
     text-align: center;
 }
 
-.main_text > h2 {
-    font-weight: 500;
-    margin-bottom: 5px;
+.h1_text {
+    color: #252525;
+    background-color: #ffffff;
+    border-radius: 100px 100px 0px 0px;
 }
 
-.main_text h1,
-.main_text p {
-    margin-bottom: 30px;
+.main_text > h2 {
+    font-weight: 500;
+    margin-bottom: -10px;
+    margin-top: 40px;
+}
+
+.main_text h1 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.main_text_p {
+    color: #d8d8d8;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .main_text > p,
 .advantages {
-    font-size: 18px;
+    font-size: 19px;
     text-align: justify;
 }
 
@@ -978,6 +1007,10 @@ footer h2 {
 
     .сontact_line > div {
         margin-bottom: 30px;
+    }
+
+    .advantages_img_block > p {
+        font-size: 20px;
     }
 }
 
