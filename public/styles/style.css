@@ -542,6 +542,10 @@ main {
     padding-top: 20px;
 }
 
+.img_products {
+    height: 175px;
+}
+
 .tovar_line {
     display: grid;
     justify-content: center;
