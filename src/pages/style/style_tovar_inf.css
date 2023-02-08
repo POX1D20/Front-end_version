@@ -1,52 +1,56 @@
 .beton_info {
-	width: 100%;
-	padding-bottom: 20px;
-	background-color: #434343;
-	border-radius: 25px;
-	margin-bottom: 30px;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #434343;
+    border-radius: 25px;
+    margin-bottom: 30px;
 }
 
-.main_text>.h1Tovarname{
-	margin-bottom: 10px;
+.main_text > .h1Tovarname {
+    margin-bottom: 10px;
 }
 
 .ShiftRight {
-	margin-left: 20px;
+    margin-left: 20px;
+    background-color: #0f0f0f23;
+    border-radius: 15px;
+    /* box-shadow: 10px 10px #ffffff73; */
+    padding: 15px 15px;
 }
 
-.main_text>.h1_tovar_name{
-	padding-bottom: 10px;
-	border-bottom: 3px solid #BCBCBC;
-	margin-top: 50px;
-	padding-left: 40px;
-	text-align: left;
+.main_text > .h1_tovar_name {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #bcbcbc;
+    margin-top: 50px;
+    padding-left: 40px;
+    text-align: left;
 }
 
-.advantages_tovar>li {
-	margin-bottom: 10px;
+.advantages_tovar > li {
+    margin-bottom: 10px;
 }
 
 .betonm {
-	color: #c09a54;
+    color: #c09a54;
+    margin-bottom: -10px;
 }
 
 .ShiftRight b {
-	color: #b6b6b6;
+    color: #b6b6b6;
 }
 
 .delivery {
-	margin-bottom: 10px;
-	color: #F2B33A;
+    color: #f2b33a;
 }
 
-.delivery_beton>li {
-	margin-bottom: 5px;
-	margin-left: 40px;
-	list-style-type: disc;
-	font-size: 18px;
-	text-align: justify;
+.delivery_beton > li {
+    margin-bottom: 5px;
+    margin-left: 40px;
+    list-style-type: disc;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .delivery_beton {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }

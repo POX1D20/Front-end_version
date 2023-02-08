@@ -14,7 +14,6 @@ const Main = () => {
     let nameShop = ['Beton', 'Fbs', 'JBI', 'KeramzitB'];
     let nameTovar = ['Бетон', 'ФБС', 'Кольца стеновые', 'Керамзитобетон'];
     // let nameLink = [BETON_ROUTE, FBS_ROUTE, JBI_ROUTE, KERAMZITOBETON_ROUTE] // переменные для SPA роутинга;
-    let nameLink = ['/beton', '/fbs_blocks', '/jbi_koltsa', '/keramzitobeton'];
     let aLink = [
         <a href="/beton">Подробнее</a>,
         <a href="/fbs_blocks">Подробнее</a>,
@@ -27,6 +26,8 @@ const Main = () => {
         'Предлагает вам сотрудничество в сфере поставок ЖБИ изделий собственного производства.',
         'Одна из разновидностей популярных лёгких бетонов, которые применяют в строительстве в наше время.',
     ];
+    // ^^^^^Локальная база данных для каталога товар из массивов^^^^
+
     for (let i = 0; i < nameShop.length; i++) {
         elements.push(
             <div key={i} className="products line_right line_bottom">
