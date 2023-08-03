@@ -11,20 +11,31 @@ import { JBI_ROUTE } from '../utils/const';
 
 const Main = () => {
     let elements = [];
-    let nameShop = ['Beton', 'Fbs', 'JBI', 'KeramzitB'];
-    let nameTovar = ['Бетон', 'ФБС', 'Кольца стеновые', 'Керамзитобетон'];
+    let nameShop = ['Beton', 'Fbs', 'JBI', 'KeramzitB', 'Road', 'Vibrator'];
+    let nameTovar = [
+        'Бетон',
+        'ФБС',
+        'Кольца стеновые',
+        'Керамзитобетон',
+        'Плиты дорожные',
+        'Вибратор для бетона',
+    ];
     // let nameLink = [BETON_ROUTE, FBS_ROUTE, JBI_ROUTE, KERAMZITOBETON_ROUTE] // переменные для SPA роутинга;
     let aLink = [
-        <a href="/beton">Подробнее</a>,
-        <a href="/fbs_blocks">Подробнее</a>,
-        <a href="/jbi_koltsa">Подробнее</a>,
-        <a href="/keramzitobeton">Подробнее</a>,
+        '/beton',
+        '/fbs_blocks',
+        '/jbi_koltsa',
+        '/keramzitobeton',
+        '/road',
+        '/vibrator',
     ];
     let desc_tovar = [
         'Производство и доставка высококачественного товарного бетона и раствора всех марок.',
         'Используются в качестве основных элементов при возведении стен и устройстве фундаментов.',
         'Предлагает вам сотрудничество в сфере поставок ЖБИ изделий собственного производства.',
-        'Одна из разновидностей популярных лёгких бетонов, которые применяют в строительстве в наше время.',
+        'Одна из разновидностей лёгких бетонов, которые применяют в строительстве в наше время.',
+        'Дорожные плиты используются для устройства дорог, площадок, тротуаров и других покрытий.',
+        'Оборудование используется для уплотнения бетона, стен, полов и других конструкций.',
     ];
     // ^^^^^Локальная база данных для каталога товар из массивов^^^^
 
@@ -32,13 +43,17 @@ const Main = () => {
         elements.push(
             <div key={i} className="products line_right line_bottom">
                 <h2>{nameTovar[i]}</h2>
-                <img
-                    className="img_products"
-                    src={`/images/main_tovar/${nameShop[i]}.jpg`}
-                    alt=""
-                ></img>
+                <a href={aLink[i]}>
+                    <img
+                        className="img_products"
+                        src={`/images/main_tovar/${nameShop[i]}.jpg`}
+                        alt=""
+                    ></img>
+                </a>
                 <h3>{desc_tovar[i]}</h3>
-                <div className="btn_wh">{aLink[i]}</div>
+                <div className="btn_wh">
+                    <a href={aLink[i]}>Подробнее</a>
+                </div>
             </div>
         );
     }

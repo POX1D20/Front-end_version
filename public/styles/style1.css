@@ -551,7 +551,7 @@ main {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -993,7 +993,7 @@ footer h2 {
     }
 
     .tovar_line {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 }
@@ -1001,6 +1001,10 @@ footer h2 {
 @media (max-width: 1438px) {
     footer {
         padding: 40px 50px;
+    }
+    .tovar_line {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
@@ -1015,6 +1019,10 @@ footer h2 {
 
     .advantages_img_block > p {
         font-size: 20px;
+    }
+    .tovar_line {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
 

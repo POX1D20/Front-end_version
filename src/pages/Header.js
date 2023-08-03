@@ -34,7 +34,7 @@ const Header = observer(() => {
 
                     <ul className="header-menu">
                         <li>
-                            <NavLink to={SHOP_ROUTE}>Продукция</NavLink>
+                            <a href="/shop">Продукция</a>
                             <ul className="drop-down_menu">
                                 <div className="drop-down_menu_bg">
                                     {/* <li>
@@ -57,6 +57,12 @@ const Header = observer(() => {
                                         </a>
                                     </li>
                                     <li>
+                                        <a href="/road">Дорожные плиты</a>
+                                    </li>
+                                    <li>
+                                        <a href="/vibrator">Аренда вибратора</a>
+                                    </li>
+                                    <li>
                                         <a href="/autopump">Автобетононасос</a>
                                     </li>
                                 </div>
@@ -72,9 +78,9 @@ const Header = observer(() => {
                         </li>
                     </ul>
                     {user.isAuth === false ? (
-                        <NavLink className="button_sign_in" to={LOGIN_ROUTE}>
+                        <a className="button_sign_in" href="/login">
                             Войти
-                        </NavLink>
+                        </a>
                     ) : (
                         <div>
                             <a
